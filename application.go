@@ -10,5 +10,11 @@ func main() {
 			"deploy":  "success",
 		})
 	})
+	r.GET("/health", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"server": "Golang server",
+			"status": 200,
+		})
+	})
 	r.Run(":5000") // listen and serve on 0.0.0.0:8080
 }
