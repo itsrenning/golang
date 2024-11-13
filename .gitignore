@@ -25,3 +25,5 @@ go.work.sum
 .env
 
 bin
+go.mod
+go.sum
