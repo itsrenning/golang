@@ -6,7 +6,7 @@ func main() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "test CI CD pipeline w/o bin",
+			"message": "test CI CD pipeline w/o bin w/o specifying linux build",
 			"deploy":  "success",
 		})
 	})
