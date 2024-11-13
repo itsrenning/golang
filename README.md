@@ -2,4 +2,4 @@
 
 Go/Golang practices
 
-test5
+test6
