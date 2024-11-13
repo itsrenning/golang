@@ -2,4 +2,4 @@
 
 Go/Golang practices
 
-w/o bin
+w/o bin2
