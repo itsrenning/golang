@@ -6,7 +6,7 @@ func main() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "test CI CD pipeline",
+			"message": "test CI CD pipeline w/o bin",
 		})
 	})
 	r.Run(":5000") // listen and serve on 0.0.0.0:8080
