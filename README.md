@@ -2,4 +2,4 @@
 
 Go/Golang practices
 
-test10
+w/o bin
