@@ -1,12 +1,15 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"fmt"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "Test AWS Code-Pipeline",
+			"message": "New Test AWS Code-Pipeline",
 			"deploy":  "success",
 		})
 	})
@@ -16,5 +19,16 @@ func main() {
 			"status": 200,
 		})
 	})
-	r.Run(":5000") // listen and serve on 0.0.0.0:8080
+	err := r.Run(":5000")
+	if err != nil {
+		fmt.Println("Failed to start server:", err)
+	}
 }
+
+func method1() {
+
+}
+
+func method2() {}
+
+func method3() {}
